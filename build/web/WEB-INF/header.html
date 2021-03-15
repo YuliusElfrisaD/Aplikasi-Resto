@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bras Bres Resto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet" type="text/css">-->
+        <link href="../css/popup.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.jsp">BRAS-BRES RESTO</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.jsp" data-toggle="tooltip" title="Home"><span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                            <li><a href="#menu" data-toggle="tooltip" title="Menu"><span class="glyphicon glyphicon-list-alt"></span> MENU</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <button type="button" class="btn navbar-btn btn-success" id="myBtn" >Login</button>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content" style="background-color: #999999">
+                        <div class="modal-header" style="padding:35px 50px; background-color: #666666; color:white !important;
+                             text-align: center;">
+                            <button type="button" class="close" data-dismiss="modal" style=" font-size: 30px; color:white !important;">&times;</button>
+                            <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                        </div>
+                        <div class="modal-body" style="padding:40px 50px;">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="usrname" style="color:white"><span class="glyphicon glyphicon-user" style="color:white"></span> Username</label>
+                                    <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="psw" style="color:white"><span class="glyphicon glyphicon-eye-open" style="color:white" ></span> Password</label>
+                                    <input type="text" class="form-control" id="psw" placeholder="Enter password">
+                                </div>
+                                <div class="checkbox">
+                                    <label style="color:white"><input type="checkbox" value="" checked>Remember me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer" style="background-color: #999999">
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            <p style="color:white">Not a member? <a href="#" style="color: #ff0033">Sign Up</a></p>
+                            <p style="color:white">Forgot <a href="#" style="color: #ff0033">Password?</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div> 
+
+            <script>
+                $(document).ready(function () {
+                    $("#myBtn").click(function () {
+                        $("#myModal").modal();
+                    });
+                });
+            </script>
+
+        </div>
+    </body>
+</html>

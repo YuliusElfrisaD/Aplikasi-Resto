@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 29, 2017, 8:47:17 PM
+    Author     : Asus a455l
+*/
+.modal-header, h4, .close {
+                background-color: #1E88E5;
+                color:white !important;
+                text-align: center;
+                font-size: 30px;
+            }
+            .modal-footer {
+                background-color: #f9f9f9;
+            }
